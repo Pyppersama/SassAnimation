@@ -1,0 +1,59 @@
+@include media-min{
+    .body{
+
+        .bodyInner{
+            p{
+                font-size: 1.1rem;
+            }
+            h1{
+                font-size: 3rem;
+            }
+        }
+    }
+    
+}
+
+@include media-md{
+    .body{
+        .bodyInner{
+            p{
+                font-size: 1.3rem;
+            }
+            h1{
+                font-size: 4rem;
+            }
+        }
+    }
+    
+}
+
+@include media-lg{
+    .body{
+        position: absolute;
+        bottom:25%;
+        
+        .bodyInner{
+            p{
+                font-size: 1.4rem;
+            }
+            h1{
+                font-size: 5rem;
+            }
+        }
+    }
+    
+}
+
+@include media-xl{
+    .body{
+        .bodyInner{
+            p{
+                font-size: 1.4rem;
+            }
+            h1{
+                font-size: 6rem;
+            }
+        }
+    }
+    
+}

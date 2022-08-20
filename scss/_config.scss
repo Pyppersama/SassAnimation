@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+$primary-color:#fff;
+
+@mixin button {
+    border:1px solid $primary-color;
+    background: transparent;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: $primary-color;
+    cursor: pointer;
+}
+
+@mixin foot-img{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right:10px;
+}
+
+@mixin media-min {
+    @media screen and (min-width:480px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width:720px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width:1600px) {
+        @content;
+    }
+}

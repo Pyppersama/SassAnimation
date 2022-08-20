@@ -1,0 +1,128 @@
+@import 'config';
+@import 'responsive';
+@import 'keyframes';
+
+body{
+    background: url('../images/background.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    color: $primary-color;
+    overflow: hidden;
+}
+
+.header{
+    width: 100%;
+
+    &Inner{
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0;
+
+        img{
+            width: 100px;
+            cursor: pointer;
+        }
+
+        button{
+            @include button;
+            margin-right: 30px;
+        }
+    }
+}
+
+.body{
+    position: absolute;
+    bottom:30%;
+    left: 11%;
+    z-index: 2;
+    p{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    h1{
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+    button{
+        @include button;
+    }
+}
+
+.footer{
+    position: absolute;
+    right: 0;
+    height:100vh;
+    top:0;
+    width:50px;
+    background: rgba(21, 21, 70, 0.5);
+
+    &Socials{
+        @include foot-img;
+        top:25%;
+    }
+    &Links{
+        @include foot-img;
+        bottom: 25%;
+    }
+
+    img{
+        width: 30px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    #menu{
+        position: absolute;
+        right:15px;
+        width: 20px;
+        top: 6%;
+    }
+}
+
+.bubblesInner{
+    width: 100%;
+    left: 6%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    position:absolute;
+    bottom:-60px;
+
+    img{
+        width:20px;
+        animation: bubbles 7s linear infinite;
+
+        &:nth-child(1){
+            animation-delay: 2s;  
+        }
+        &:nth-child(2){
+            animation-delay: 4s;  
+            width:30px;
+        }
+        &:nth-child(3){
+            animation-delay: 2.5s;  
+            width:40px;
+        }
+        &:nth-child(4){
+            animation-delay: 3s;  
+        }
+        &:nth-child(5){
+            animation-delay: 2s;  
+            width:15px;
+        }
+        &:nth-child(6){
+            animation-delay: 1s;  
+            width:50px;
+        }
+        &:nth-child(7){
+            animation-delay: 4s; 
+            width:30px; 
+        }
+
+    }
+}
+

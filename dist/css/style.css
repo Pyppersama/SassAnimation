@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .body .bodyInner p {
+    font-size: 1.1rem;
+  }
+  .body .bodyInner h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 720px) {
+  .body .bodyInner p {
+    font-size: 1.3rem;
+  }
+  .body .bodyInner h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .body {
+    position: absolute;
+    bottom: 25%;
+  }
+  .body .bodyInner p {
+    font-size: 1.4rem;
+  }
+  .body .bodyInner h1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .body .bodyInner p {
+    font-size: 1.4rem;
+  }
+  .body .bodyInner h1 {
+    font-size: 6rem;
+  }
+}
+@-webkit-keyframes bubbles {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-80vh);
+  }
+}
+@keyframes bubbles {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-80vh);
+  }
+}
+body {
+  background: url("../images/background.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+}
+.headerInner {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+.headerInner img {
+  width: 100px;
+  cursor: pointer;
+}
+.headerInner button {
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 10px 25px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.body {
+  position: absolute;
+  bottom: 30%;
+  left: 11%;
+  z-index: 2;
+}
+.body p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.body h1 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+.body button {
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 10px 25px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  top: 0;
+  width: 50px;
+  background: rgba(21, 21, 70, 0.5);
+}
+.footerSocials {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 10px;
+  top: 25%;
+}
+.footerLinks {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 10px;
+  bottom: 25%;
+}
+.footer img {
+  width: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.footer #menu {
+  position: absolute;
+  right: 15px;
+  width: 20px;
+  top: 6%;
+}
+
+.bubblesInner {
+  width: 100%;
+  left: 6%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  bottom: -60px;
+}
+.bubblesInner img {
+  width: 20px;
+  -webkit-animation: bubbles 7s linear infinite;
+          animation: bubbles 7s linear infinite;
+}
+.bubblesInner img:nth-child(1) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.bubblesInner img:nth-child(2) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  width: 30px;
+}
+.bubblesInner img:nth-child(3) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  width: 40px;
+}
+.bubblesInner img:nth-child(4) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.bubblesInner img:nth-child(5) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  width: 15px;
+}
+.bubblesInner img:nth-child(6) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  width: 50px;
+}
+.bubblesInner img:nth-child(7) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  width: 30px;
+}/*# sourceMappingURL=style.css.map */
